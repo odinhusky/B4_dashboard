@@ -1,0 +1,8 @@
+html{
+    font-size: 14px;
+}
+
+.main{
+    /*                        navbar  footer  footer的margin-top footer的文字大小 */
+    min-height: calc(100vh - (49px + 49px + 42px + 14px));
+}

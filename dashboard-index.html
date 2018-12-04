@@ -1,0 +1,452 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角後台管理系統</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+      
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">商務控制後台</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="dashboard-index.html">首頁
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link" href="dashboard_table.html">列表</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-4 main">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0 h-100">
+            <div class="card-body d-flex align-items-center">
+              <div class="fa fa-money fa-3x text-secondary mr-2 d-none d-sm-block"></div>
+              <div class="text-center w-100">
+                <div class="h5">今日營收</div>
+                <div class="h3">192,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0">
+            <div class="card-body d-flex align-items-center">
+              <div class="fa fa-users fa-3x text-secondary mr-2 d-none d-sm-block"></div>
+              <div class="text-center w-100">
+                <div class="h5">會員增加</div>
+                <div class="display-4">172</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0 h-100">
+            <div class="card-body d-flex align-items-center">
+              <div class="fa fa-id-card fa-3x text-secondary mr-2 d-none d-sm-block"></div>
+              <div class="text-center w-100">
+                <div class="h5">訂單數</div>
+                <div class="display-4">320</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0">
+            <div class="card-body d-flex align-items-center">
+              <div class="fa fa-archive fa-3x text-secondary mr-2 d-none d-sm-block"></div>
+              <div class="text-center w-100">
+                <div class="h5">待出貨數</div>
+                <div class="display-4">120</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- 線上人數以及右邊的表格 -->
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="h-100">
+            <div class="border p-5 h-100">
+              <p class="text-center m-0">目前線上人數</p>
+              <p class="text-center" style="font-size: 72px;">99</p>
+              <div class="progress mt-5">
+                <div class="progress-bar" role="progressbar" style="width: 35%">桌機</div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 65%">行動裝置</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              新進訂單
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-end mb-3">
+                <a href="#" class="btn btn-outline-secondary">訂單管理</a>
+              </div>
+              <table class="table table-light">
+                <thead>
+                  <tr>
+                    <th>來源</th>
+                    <th>姓名</th>
+                    <th>貨品</th>
+                    <th width="100">價格</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>六角和牛排</td>
+                    <td class="😊😎">3,000</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>六角喜餅</td>
+                    <td class="😊😎">2,000</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>六角雞胸</td>
+                    <td class="😊😎">1,500</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>六角可愛 T Shirt</td>
+                    <td class="😊😎">2,000</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="text-right">總營收</td>
+                    <td class="ml-5">10,500</td>
+                  </tr>
+                </tfoot>
+              </table>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 圖表 -->
+      <div class="row mt-4">
+        <section class="col-lg-8">
+          <div class="card rounded-0">
+            <div class="card-header">
+              用戶來源
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-8">
+                  <canvas id="barCanvas"></canvas>
+                </div>
+                <div class="col-lg-4">
+                  <h4>Detail</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum, impedit iste architecto cupiditate repellat odio ex aperiam. Ullam quas modi quam accusantium nobis officiis in harum aut assumenda adipisci.</p>
+                  <h6 class="mt-3">Google來源</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6 class="mt-3">Facebook</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6 class="mt-3">Instgram</h6>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="col-lg-4">
+          <div class="card h-100">
+            <div class="card-header">瀏覽器</div>
+            <div class="card-body d-flex align-items-center">
+              <canvas class="chart-item"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    <!-- 表格 -->
+      <div class="card rounded-0 mt-4">
+        <div class="card-header">月營運狀態</div>
+        <div class="card-body">
+          <div class="d-flex mb-3">
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="month" class="sr-only">月份</label>
+                <select name="" id="month" class="form-control form-control-sm">
+                  <option value="9">9月</option>
+                  <option value="10">10月</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="ml-auto">
+              <a href="#" class="btn btn-outline-secondary btn-sm">下載報表</a>
+              <a href="#" class="btn btn-outline-secondary btn-sm">訂單管理</a>
+            </div>
+          </div>
+
+          <table class="table mb-0 table-responsive">
+            <thead>
+              <tr>
+                <th width="50">日期</th>
+                <th>訂單數</th>
+                <th>退費數</th>
+                <th>出貨數</th>
+                <th>有問題貨品</th>
+                <th width="150">營業額</th>
+                <th width="150">淨利潤</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9/1</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/2</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/3</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/4</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/5</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/6</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+            
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6" class="text-right">月總營收</td>
+                <td class="text-right">3,750,500</td>
+              </tr>
+              <tr>
+                <td colspan="6" class="text-right">月總淨利潤</td>
+                <td class="text-right">2,140,500</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    <!-- .main的結尾 -->
+    </div>
+
+    
+
+    <footer class="mt-5 py-3 bg-light text-secondary text-center">
+      六角學院後台管理系統
+    </footer>
+
+
+
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // 編輯的 Modal 事件
+    $('#editModal').on('show.bs.modal', function (event) {
+      
+    });
+
+    $('#removeModal').on('show.bs.modal', function (event) {
+
+    })
+  });
+</script>
+<script>
+  window.chartColors = {
+    red: 'rgb(255, 99, 132)',
+    orange: 'rgb(255, 159, 64)',
+    yellow: 'rgb(255, 205, 86)',
+    green: 'rgb(75, 192, 192)',
+    blue: 'rgb(54, 162, 235)',
+    purple: 'rgb(153, 102, 255)',
+    grey: 'rgb(201, 203, 207)'
+  };
+
+  var randomScalingFactor = function () {
+    return Math.round(Math.random() * 100);
+  };
+
+  var config = {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ],
+        backgroundColor: [
+          window.chartColors.red,
+          window.chartColors.orange,
+          window.chartColors.yellow,
+          window.chartColors.green,
+          window.chartColors.blue,
+        ],
+        label: 'Dataset 1'
+      }],
+      labels: [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue"
+      ]
+    },
+    options: {
+      responsive: true
+    }
+  };
+
+
+  // bar
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var colors = Chart.helpers.color;
+  var barChartData = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [{
+      label: 'Dataset 1',
+      backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+      borderColor: window.chartColors.red,
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }, {
+      label: 'Dataset 2',
+      backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+      borderColor: window.chartColors.blue,
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }]
+
+  };
+
+  window.onload = function () {
+    // pie
+    document.querySelectorAll('.chart-item').forEach(function (item) {
+      config.data.datasets.forEach(function (dataset) {
+        dataset.data = dataset.data.map(function () {
+          return randomScalingFactor();
+        });
+      });
+      var ctx = item.getContext("2d");
+      window.myPie = new Chart(ctx, config);
+    })
+
+
+    // bar
+    var barCtx = document.getElementById("barCanvas").getContext("2d");
+    window.myBar = new Chart(barCtx, {
+      type: 'bar',
+      data: barChartData,
+      options: {
+        responsive: true,
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Chart.js Bar Chart'
+        }
+      }
+    });
+
+  };
+</script>
+  </body>
+  
+  </html>
+  
